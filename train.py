@@ -147,3 +147,7 @@ def mclust_R(embedding, num_cluster, modelNames='EEE', random_seed=0):
     res = rmclust(rpy2.robjects.numpy2ri.numpy2rpy(embedding), num_cluster, modelNames)
     mclust_res = np.array(res[-2]).astype('int')
     return mclust_res
+    
+def refine_label(*args, **kwargs):
+    print("⚠️ Warning: refine_label() is a placeholder and not implemented.")
+    return None
